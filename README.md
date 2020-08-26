@@ -116,11 +116,11 @@ Douban Movie Short Comments Dataset is a classical dataset for Sentiment Analysi
 You can take a look at https://www.kaggle.com/weiyunchen/nlp123, which use Tf-idf as feature and build DNN on Douban Movie Short Comments Dataset.
 
 This work is inspired by that jupyter notebook. Also use a sample of the full datasets.
-The Difference is that rather than use average Word2Vec vectors as sentence vector, 
+The Difference is that rather than use Tf-idf or average Word2Vec vectors as sentence vector, 
 This project use Word2Vec and try to merge sentiment dictionary with Word2Vec.
 
 The idea is simple, translation the Word2Vec vector to positive space and weighted vector by the sentiment dictionary.
-The key the construction of sentiment dictionary. It use simple voting on the full dataset. And filter out some invalid 
+The key is the construction of sentiment dictionary. It use simple voting on the full dataset. And filter out some invalid 
 words (contains stopwords and others --- may be gap between sample and population)
 
 The conclusion show that the Sentiment Weighted Word2Vec feature improve 6% balance accuracy than simple average Word2Vec feature
